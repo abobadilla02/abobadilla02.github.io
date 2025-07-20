@@ -36,16 +36,22 @@ const About: React.FC = () => {
 
   const timeline: TimelineItem[] = [
     {
-      year: "2023 - Present",
-      role: "Fullstack Software Engineer",
-      company: "Various Companies",
-      description: "Working on scalable web applications using Angular, Python, and AWS technologies."
+      year: "2021 - Present",
+      role: "Senior Software Engineer & Team Lead",
+      company: "Airnguru",
+      description: "Leading cross-functional teams, mentoring developers, and implementing high-impact features using Angular, TypeScript, Python, and AWS."
     },
     {
-      year: "2022 - 2023",
-      role: "Software Developer",
-      company: "Previous Experience",
-      description: "Developed and maintained web applications with focus on clean code and best practices."
+      year: "2020 - 2021",
+      role: "Frontend Developer",
+      company: "Airnguru",
+      description: "Developed custom Angular libraries and web modules, integrated AWS Cognito authentication, and created reusable components."
+    },
+    {
+      year: "2018 - 2020",
+      role: "Frontend Developer",
+      company: "Nobilis",
+      description: "Added features using Angular and NodeJS, refactored application modules, and implemented automatic testing frameworks."
     }
   ];
 
@@ -61,9 +67,9 @@ const About: React.FC = () => {
           About Me
         </h1>
         <p className="text-lg text-gray-600 dark:text-gray-300 leading-relaxed">
-          I'm a passionate Fullstack Software Engineer with expertise in Angular, Python, and AWS. 
-          I believe in writing clean, maintainable code and fostering collaborative, remote-first work environments. 
-          My approach combines technical excellence with a focus on team growth and mentorship.
+          I'm a Senior Software Engineer & Team Lead with 7+ years of experience developing web applications using Angular, TypeScript, and Python under AWS cloud infrastructure. 
+          I focus on creating robust software solutions with high-quality, reusable code and have experience leading cross-functional teams. 
+          My approach combines technical excellence with mentorship and team growth.
         </p>
       </motion.section>
 

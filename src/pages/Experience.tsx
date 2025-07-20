@@ -15,32 +15,48 @@ type Experience = {
 const Experience: React.FC = () => {
   const experiences: Experience[] = [
     {
-      role: "Fullstack Software Engineer",
-      company: "Various Companies",
-      period: "2023 - Present",
-      location: "Remote",
-      description: "Working on scalable web applications and cloud infrastructure.",
+      role: "Senior Software Engineer & Team Lead",
+      company: "Airnguru",
+      period: "April 2021 - Present",
+      location: "Temuco, Chile (GMT-3)",
+      description: "Leading cross-functional product teams and driving high-impact features for key customer products.",
       achievements: [
-        "Developed and maintained full-stack applications using Angular and Python",
-        "Implemented AWS cloud solutions for scalable infrastructure",
-        "Collaborated with distributed teams using async communication practices",
-        "Mentored junior developers and conducted code reviews"
+        "Led cross-functional product teams (2-4 engineers) across frontend, backend, and full-stack roles",
+        "Mentored junior and semi-senior developers through regular code reviews",
+        "Designed notification flow using AppSync and DynamoDB Streams, reducing bottlenecks by 90%",
+        "Created CloudFormation templates for complete stack replication across customers",
+        "Implemented custom Angular library reducing PDF creation time by 90%",
+        "Developed server-side PDF creator using Puppeteer, improving accuracy by 70%"
       ],
-      technologies: ["Angular", "Python", "AWS", "TypeScript", "React", "Node.js"]
+      technologies: ["Angular 11-18", "TypeScript", "Python", "JavaScript", "NodeJS", "Puppeteer", "AWS (Cognito, Amplify, S3, Lambda, AppSync, DynamoDB, CloudFormation, Step Functions, SQS, EC2, CloudFront)", "GraphQL"]
     },
     {
-      role: "Software Developer",
-      company: "Previous Experience",
-      period: "2022 - 2023",
-      location: "Remote",
-      description: "Focused on web development and clean code practices.",
+      role: "Frontend Developer",
+      company: "Airnguru",
+      period: "May 2020 - April 2021",
+      location: "Temuco, Chile",
+      description: "Developed custom Angular libraries and web modules with AWS integration.",
       achievements: [
-        "Built responsive web applications with modern frameworks",
-        "Implemented RESTful APIs and database integrations",
-        "Participated in agile development processes",
-        "Contributed to open-source projects"
+        "Developed custom Angular library for reusable components, services, and directives",
+        "Created new web module consuming REST API with custom queries and sorted results",
+        "Implemented external libraries through technical documentation analysis",
+        "Integrated AWS Cognito authentication service for secure user requests"
       ],
-      technologies: ["JavaScript", "React", "Node.js", "PostgreSQL", "Git"]
+      technologies: ["Angular 8-11", "TypeScript", "JavaScript", "AWS (Cognito, Amplify, S3, Lambda, CloudFormation, DynamoDB)"]
+    },
+    {
+      role: "Frontend Developer",
+      company: "Nobilis",
+      period: "July 2018 - May 2020",
+      location: "Temuco, Chile",
+      description: "Added features and refactored applications using Angular and NodeJS with testing frameworks.",
+      achievements: [
+        "Added new features for frontend (Angular) and backend (NodeJS)",
+        "Implemented automatic testing framework with SonarQube for code quality",
+        "Refactored application modules improving performance and preventing crashes",
+        "Maintained minimum code quality standards through testing"
+      ],
+      technologies: ["Angular 4-7", "TypeScript", "JavaScript", "NodeJS", "Loopback 2", "MongoDB"]
     }
   ];
 

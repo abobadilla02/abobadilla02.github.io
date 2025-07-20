@@ -15,40 +15,49 @@ type Project = {
 const Portfolio: React.FC = () => {
   const projects: Project[] = [
     {
-      title: "Medium & WhatsApp Scheduler",
-      description: "A comprehensive scheduling and publishing application for Medium and WhatsApp content management. Features automated posting, content calendar, and analytics dashboard.",
-      image: "https://via.placeholder.com/400x250/3B82F6/FFFFFF?text=Medium+WhatsApp+Scheduler",
-      technologies: ["React", "Node.js", "MongoDB", "WhatsApp API", "Medium API"],
-      githubUrl: "#",
-      liveUrl: "#",
-      year: "2024"
+      title: "Personal Portfolio Website",
+      description: "Modern, responsive personal portfolio built with React, TypeScript, and TailwindCSS. Features dark mode, smooth animations, and accessibility-first design with professional presentation of skills and projects.",
+      image: "https://picsum.photos/400/250?random=1",
+      technologies: ["React 19", "TypeScript", "TailwindCSS", "Framer Motion", "React Router", "GitHub Pages"],
+      githubUrl: "https://github.com/abobadilla02/abobadilla02.github.io",
+      liveUrl: "https://abobadilla02.github.io",
+      year: "2025"
     },
     {
-      title: "E-commerce Platform",
-      description: "Full-stack e-commerce solution with user authentication, payment processing, and admin dashboard. Built with modern web technologies and responsive design.",
-      image: "https://via.placeholder.com/400x250/10B981/FFFFFF?text=E-commerce+Platform",
-      technologies: ["Angular", "Python", "PostgreSQL", "Stripe API", "AWS"],
+      title: "Medium Post Integration & Scheduler",
+      description: "Fullstack web application for scheduling and publishing posts to Medium using React, TypeScript, GraphQL, and Node.js. Features real-time updates, flexible scheduling, and modern UI with toast notifications.",
+      image: "https://picsum.photos/400/250?random=2",
+      technologies: ["React 18", "TypeScript", "GraphQL", "Apollo Client", "Node.js", "MongoDB", "Node-cron"],
+      githubUrl: "https://github.com/abobadilla02/medium-post-integration",
+      liveUrl: "#",
+      year: "2025"
+    },
+    {
+      title: "Custom Angular Library & PDF Creator",
+      description: "Developed a custom Angular library with dynamic slides creator and server-side PDF generator using Puppeteer. Reduced PDF creation time by 90% and improved accuracy by 70%.",
+      image: "https://picsum.photos/400/250?random=3",
+      technologies: ["Angular 11-18", "TypeScript", "Puppeteer", "NodeJS", "AWS Lambda"],
       githubUrl: "#",
       liveUrl: "#",
       year: "2023"
     },
     {
-      title: "Task Management App",
-      description: "Collaborative task management application with real-time updates, team collaboration features, and progress tracking. Designed for remote teams.",
-      image: "https://via.placeholder.com/400x250/8B5CF6/FFFFFF?text=Task+Management+App",
-      technologies: ["React", "TypeScript", "Socket.io", "Express", "MongoDB"],
+      title: "Real-time Notification System",
+      description: "Designed and implemented a notification flow using AppSync and DynamoDB Streams. Eliminated polling bottlenecks by creating real-time updates when new data is added to the database.",
+      image: "https://picsum.photos/400/250?random=4",
+      technologies: ["AWS AppSync", "DynamoDB Streams", "GraphQL", "TypeScript", "Angular"],
       githubUrl: "#",
       liveUrl: "#",
-      year: "2023"
+      year: "2022"
     },
     {
-      title: "Weather Dashboard",
-      description: "Real-time weather application with location-based forecasts, interactive maps, and customizable widgets. Integrates with multiple weather APIs.",
-      image: "https://via.placeholder.com/400x250/F59E0B/FFFFFF?text=Weather+Dashboard",
-      technologies: ["React", "TypeScript", "OpenWeather API", "Chart.js", "TailwindCSS"],
+      title: "CloudFormation Infrastructure",
+      description: "Created comprehensive CloudFormation templates to replicate complete AWS stacks across different customers. Automated infrastructure deployment and management.",
+      image: "https://picsum.photos/400/250?random=5",
+      technologies: ["AWS CloudFormation", "AWS Lambda", "S3", "Cognito", "DynamoDB", "Step Functions"],
       githubUrl: "#",
       liveUrl: "#",
-      year: "2023"
+      year: "2022"
     }
   ];
 
@@ -151,30 +160,44 @@ const Portfolio: React.FC = () => {
               </div>
 
               <div className="flex space-x-3">
-                <a
-                  href={project.githubUrl}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  onKeyDown={(e) => handleKeyDown(e, () => handleProjectLink(project.githubUrl))}
-                  className="flex-1 flex items-center justify-center px-4 py-2 bg-gray-800 dark:bg-gray-700 text-white rounded-lg hover:bg-gray-700 dark:hover:bg-gray-600 transition-colors duration-200"
-                  aria-label={`View ${project.title} source code`}
-                  tabIndex={0}
-                >
-                  <Github className="w-4 h-4 mr-2" aria-hidden="true" />
-                  View Code
-                </a>
-                <a
-                  href={project.liveUrl}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  onKeyDown={(e) => handleKeyDown(e, () => handleProjectLink(project.liveUrl))}
-                  className="flex-1 flex items-center justify-center px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors duration-200"
-                  aria-label={`View ${project.title} live demo`}
-                  tabIndex={0}
-                >
-                  <ExternalLink className="w-4 h-4 mr-2" aria-hidden="true" />
-                  Live Demo
-                </a>
+                {project.githubUrl && project.githubUrl !== "#" ? (
+                  <a
+                    href={project.githubUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    onKeyDown={(e) => handleKeyDown(e, () => handleProjectLink(project.githubUrl))}
+                    className="flex-1 flex items-center justify-center px-4 py-2 bg-gray-800 dark:bg-gray-700 text-white rounded-lg hover:bg-gray-700 dark:hover:bg-gray-600 transition-colors duration-200"
+                    aria-label={`View ${project.title} source code`}
+                    tabIndex={0}
+                  >
+                    <Github className="w-4 h-4 mr-2" aria-hidden="true" />
+                    View Code
+                  </a>
+                ) : (
+                  <div className="flex-1 flex items-center justify-center px-4 py-2 bg-gray-100 dark:bg-gray-700 text-gray-500 dark:text-gray-400 rounded-lg border border-gray-200 dark:border-gray-600">
+                    <Github className="w-4 h-4 mr-2" aria-hidden="true" />
+                    Private Project
+                  </div>
+                )}
+                {project.liveUrl && project.liveUrl !== "#" ? (
+                  <a
+                    href={project.liveUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    onKeyDown={(e) => handleKeyDown(e, () => handleProjectLink(project.liveUrl))}
+                    className="flex-1 flex items-center justify-center px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors duration-200"
+                    aria-label={`View ${project.title} live demo`}
+                    tabIndex={0}
+                  >
+                    <ExternalLink className="w-4 h-4 mr-2" aria-hidden="true" />
+                    Live Demo
+                  </a>
+                ) : (
+                  <div className="flex-1 flex items-center justify-center px-4 py-2 bg-gray-100 dark:bg-gray-700 text-gray-500 dark:text-gray-400 rounded-lg border border-gray-200 dark:border-gray-600">
+                    <ExternalLink className="w-4 h-4 mr-2" aria-hidden="true" />
+                    Demo Coming Soon
+                  </div>
+                )}
               </div>
             </div>
           </motion.article>

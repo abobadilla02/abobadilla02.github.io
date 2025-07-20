@@ -35,7 +35,7 @@ const Contact: React.FC = () => {
       icon: <Mail className="w-6 h-6" />,
       title: "Email",
       description: "Send me a direct message",
-      link: "mailto:alonso.bobadilla@gmail.com",
+      link: "mailto:alonso.bobadilla.montoya@gmail.com",
       color: "bg-red-600 hover:bg-red-700"
     }
   ];
@@ -48,10 +48,10 @@ const Contact: React.FC = () => {
   ];
 
   const expertise: InterestItem[] = [
-    { text: "Angular & React development", color: "bg-green-600 dark:bg-green-400" },
-    { text: "Python backend development", color: "bg-green-600 dark:bg-green-400" },
-    { text: "AWS cloud infrastructure", color: "bg-green-600 dark:bg-green-400" },
-    { text: "Remote team collaboration", color: "bg-green-600 dark:bg-green-400" }
+    { text: "Angular (4-18) & TypeScript", color: "bg-green-600 dark:bg-green-400" },
+    { text: "Python & NodeJS development", color: "bg-green-600 dark:bg-green-400" },
+    { text: "AWS (Lambda, S3, Cognito, DynamoDB)", color: "bg-green-600 dark:bg-green-400" },
+    { text: "Team leadership & mentoring", color: "bg-green-600 dark:bg-green-400" }
   ];
 
   const handleKeyDown = (event: React.KeyboardEvent, action: () => void): void => {
@@ -186,8 +186,8 @@ const Contact: React.FC = () => {
           Currently available for new opportunities
         </p>
         <a
-          href="mailto:alonso.bobadilla@gmail.com"
-          onKeyDown={(e) => handleKeyDown(e, () => window.location.href = 'mailto:alonso.bobadilla@gmail.com')}
+          href="mailto:alonso.bobadilla.montoya@gmail.com"
+          onKeyDown={(e) => handleKeyDown(e, () => window.location.href = 'mailto:alonso.bobadilla.montoya@gmail.com')}
           className="inline-flex items-center px-6 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors duration-200"
           aria-label="Send me an email"
           tabIndex={0}

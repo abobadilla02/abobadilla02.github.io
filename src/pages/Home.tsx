@@ -13,20 +13,20 @@ const Home: React.FC = () => {
   const valueCards: ValueCard[] = [
     {
       icon: <Code className="w-12 h-12 text-blue-600 dark:text-blue-400 mx-auto mb-4" />,
-      title: "Clean Code Advocate",
-      description: "Writing maintainable, scalable code with best practices and modern technologies.",
+      title: "Team Leader & Mentor",
+      description: "Leading cross-functional teams and mentoring junior developers to maintain high-quality standards.",
       delay: 0.2
     },
     {
       icon: <Users className="w-12 h-12 text-blue-600 dark:text-blue-400 mx-auto mb-4" />,
-      title: "Mentor & Collaborator",
-      description: "Sharing knowledge and helping teams grow through effective mentorship.",
+      title: "AWS Cloud Expert",
+      description: "Building scalable infrastructure using AWS services like Lambda, S3, Cognito, and DynamoDB.",
       delay: 0.4
     },
     {
       icon: <Globe className="w-12 h-12 text-blue-600 dark:text-blue-400 mx-auto mb-4" />,
-      title: "Remote Culture Expert",
-      description: "Championing async work and distributed team collaboration.",
+      title: "Angular Specialist",
+      description: "Expert in Angular (4-18) with custom libraries, directives, and reusable components.",
       delay: 0.6
     }
   ];
@@ -53,8 +53,8 @@ const Home: React.FC = () => {
           </h1>
           
           <p className="text-xl md:text-2xl text-gray-600 dark:text-gray-300 mb-8 max-w-3xl mx-auto">
-            Fullstack Software Engineer passionate about building scalable applications 
-            and fostering remote-first, async work cultures.
+            Senior Software Engineer & Team Lead with 7+ years of experience building scalable applications 
+            using Angular, TypeScript, Python, and AWS cloud infrastructure.
           </p>
 
           <div className="grid md:grid-cols-3 gap-8 mb-12">

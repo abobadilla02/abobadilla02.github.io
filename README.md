@@ -1,6 +1,6 @@
 # Alonso Bobadilla - Personal Portfolio
 
-A modern, responsive personal portfolio website built with React, TypeScript, and TailwindCSS. This portfolio showcases my experience as a Fullstack Software Engineer, featuring my projects, skills, and professional background.
+A modern, responsive personal portfolio website built with React, TypeScript, and TailwindCSS. This portfolio showcases my experience as a Senior Software Engineer & Team Lead, featuring my projects, skills, and professional background.
 
 ## 🚀 Features
 
@@ -107,8 +107,8 @@ This project is open source and available under the [MIT License](LICENSE).
 ## 🤝 Contact
 
 - **LinkedIn**: [Alonso Bobadilla](https://www.linkedin.com/in/alonsobobadilla/)
-- **GitHub**: [abobadilla02](https://github.com/abobadilla02)
-- **Email**: alonso.bobadilla@gmail.com
+- **GitLab**: [abobadilla02](https://gitlab.com/abobadilla02)
+- **Email**: alonso.bobadilla.montoya@gmail.com
 
 ---
 

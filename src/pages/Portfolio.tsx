@@ -204,6 +204,39 @@ const Portfolio: React.FC = () => {
         ))}
       </section>
 
+      {/* Academic & Research Projects (GitLab) */}
+      <section className="mt-12">
+        <h2 className="text-2xl font-bold text-gray-800 dark:text-white mb-6">
+          Academic & Research Projects (GitLab)
+        </h2>
+        <div className="grid md:grid-cols-2 gap-8">
+          <div className="bg-white dark:bg-gray-800 rounded-lg shadow-lg p-6">
+            <h3 className="text-xl font-semibold text-gray-800 dark:text-white mb-2">
+              Software Product Line Engineering Toolkit
+            </h3>
+            <p className="text-gray-600 dark:text-gray-300 mb-4">
+              A set of tools and scripts for modeling, analyzing, and managing software product lines (SPLs). Demonstrates advanced knowledge in feature modeling, variability management, and SPL automation. Used in academic research and teaching.
+            </p>
+            <div className="flex flex-wrap gap-2 mb-4">
+              <span className="px-3 py-1 bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 rounded-full text-sm">Angular</span>
+              <span className="px-3 py-1 bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 rounded-full text-sm">TypeScript</span>
+              <span className="px-3 py-1 bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 rounded-full text-sm">Angular</span>
+              <span className="px-3 py-1 bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 rounded-full text-sm">SPL</span>
+              <span className="px-3 py-1 bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 rounded-full text-sm">Research</span>
+            </div>
+            <a
+              href="https://gitlab.com/abobadilla02"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center px-4 py-2 bg-gray-800 dark:bg-gray-700 text-white rounded-lg hover:bg-gray-700 dark:hover:bg-gray-600 transition-colors duration-200"
+              aria-label="View GitLab profile"
+            >
+              View on GitLab
+            </a>
+          </div>
+        </div>
+      </section>
+
       <motion.section
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
@@ -215,12 +248,24 @@ const Portfolio: React.FC = () => {
           target="_blank"
           rel="noopener noreferrer"
           onKeyDown={(e) => handleKeyDown(e, () => window.open('https://github.com/abobadilla02', '_blank'))}
-          className="inline-flex items-center px-6 py-3 bg-gray-800 dark:bg-gray-700 text-white rounded-lg hover:bg-gray-700 dark:hover:bg-gray-600 transition-colors duration-200"
+          className="inline-flex items-center px-6 py-3 bg-gray-800 dark:bg-gray-700 text-white rounded-lg hover:bg-gray-700 dark:hover:bg-gray-600 transition-colors duration-200 mr-4"
           aria-label="View more projects on GitHub"
           tabIndex={0}
         >
           <Github className="w-5 h-5 mr-2" aria-hidden="true" />
           View More on GitHub
+        </a>
+        <a
+          href="https://gitlab.com/abobadilla02"
+          target="_blank"
+          rel="noopener noreferrer"
+          onKeyDown={(e) => handleKeyDown(e, () => window.open('https://gitlab.com/abobadilla02', '_blank'))}
+          className="inline-flex items-center px-6 py-3 bg-orange-600 dark:bg-orange-700 text-white rounded-lg hover:bg-orange-700 dark:hover:bg-orange-800 transition-colors duration-200"
+          aria-label="View more projects on GitLab"
+          tabIndex={0}
+        >
+          <svg xmlns="http://www.w3.org/2000/svg" className="w-5 h-5 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path d="M22.548 13.297l-2.01-6.187a1.13 1.13 0 0 0-2.148-.01l-1.7 5.1H7.31l-1.7-5.1a1.13 1.13 0 0 0-2.148.01l-2.01 6.187a1.13 1.13 0 0 0 .41 1.27l9.19 6.68a1.13 1.13 0 0 0 1.34 0l9.19-6.68a1.13 1.13 0 0 0 .41-1.27z"/></svg>
+          View More on GitLab
         </a>
       </motion.section>
     </main>

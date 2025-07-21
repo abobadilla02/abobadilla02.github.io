@@ -108,6 +108,7 @@ This project is open source and available under the [MIT License](LICENSE).
 
 - **LinkedIn**: [Alonso Bobadilla](https://www.linkedin.com/in/alonsobobadilla/)
 - **GitLab**: [abobadilla02](https://gitlab.com/abobadilla02)
+- **GitHub**: [abobadilla02](https://github.com/abobadilla02)
 - **Email**: alonso.bobadilla.montoya@gmail.com
 
 ---

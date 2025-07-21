@@ -42,7 +42,7 @@ const Contact: React.FC = () => {
 
   const lookingFor: InterestItem[] = [
     { text: "Remote-first opportunities", color: "bg-blue-600 dark:bg-blue-400" },
-    { text: "Fullstack development roles", color: "bg-blue-600 dark:bg-blue-400" },
+    { text: "Fullstack, Backend, Frontend development roles", color: "bg-blue-600 dark:bg-blue-400" },
     { text: "Teams that value clean code", color: "bg-blue-600 dark:bg-blue-400" },
     { text: "Mentorship opportunities", color: "bg-blue-600 dark:bg-blue-400" }
   ];

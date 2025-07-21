@@ -1,6 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { ArrowRight, Code, Users, Globe } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 type ValueCard = {
   icon: React.ReactNode;
@@ -30,13 +31,6 @@ const Home: React.FC = () => {
       delay: 0.6
     }
   ];
-
-  const handleKeyDown = (event: React.KeyboardEvent, action: () => void): void => {
-    if (event.key === 'Enter' || event.key === ' ') {
-      event.preventDefault();
-      action();
-    }
-  };
 
   return (
     <main className="min-h-screen flex items-center" role="main">
@@ -83,25 +77,23 @@ const Home: React.FC = () => {
             transition={{ duration: 0.8, delay: 0.8 }}
             className="flex flex-col sm:flex-row gap-4 justify-center"
           >
-            <a
-              href="/portfolio"
-              onKeyDown={(e) => handleKeyDown(e, () => window.location.href = '/portfolio')}
+            <Link
+              to="/portfolio"
               className="inline-flex items-center px-6 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors duration-200"
               aria-label="View my portfolio projects"
               tabIndex={0}
             >
               View My Work
               <ArrowRight className="ml-2 w-5 h-5" />
-            </a>
-            <a
-              href="/contact"
-              onKeyDown={(e) => handleKeyDown(e, () => window.location.href = '/contact')}
+            </Link>
+            <Link
+              to="/contact"
               className="inline-flex items-center px-6 py-3 border-2 border-blue-600 text-blue-600 dark:text-blue-400 rounded-lg hover:bg-blue-600 hover:text-white transition-colors duration-200"
               aria-label="Get in touch with me"
               tabIndex={0}
             >
               Get In Touch
-            </a>
+            </Link>
           </motion.div>
         </motion.div>
       </div>
